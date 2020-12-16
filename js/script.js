@@ -5,17 +5,31 @@
 
 
 
-var dado1 = Math.floor(Math.random() * 6)+1;
-console.log(dado1);
-var dado2 = Math.floor(Math.random() * 6)+1;
-console.log(dado2);
+var btnGenera = document.getElementById("gioca");
 
-if (dado1>dado2){
-    alert('dado1 wins');
-}
-else if (dado2>dado1){
-    alert('dado2 wins');
-}
-else{
-    alert('draw');
-}
+btnGenera.addEventListener('click',
+    function () {
+        var player = document.getElementsByClassName('player').value;
+        var dado1 = Math.floor(Math.random() * 6) + 1;
+        console.log(dado1);
+        var dado2 = Math.floor(Math.random() * 6) + 1;
+        console.log(dado2);
+        var player = document.getElementById('human').value;
+        console.log(human);
+
+        document.getElementById('player').innerHTML = player;
+        document.getElementById('dado1').innerHTML = dado1;
+        document.getElementById('dado2').innerHTML = dado2;
+        if (dado1>dado2){
+            document.getElementById('vincitore').innerHTML = player +' '+ 'wins';
+        }
+        else if (dado2>dado1){
+            document.getElementById('vincitore').innerHTML = 'Unlucky ho vinto io :P';
+        }
+        else{
+            document.getElementById('vincitore').innerHTML = 'Pareggio';
+        };
+        document.getElementById('play').className = 'show'
+    }
+);
+

@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div class="container">
+        <h1>Gioco Dei Dadi </h1>
+        <div class="form">
+            <div class="row">
+                <div class="col">
+                    <label for="human">Inserire il nome da umano</label>
+                    <input type="text" id="human" placeholder="Inserire il nome da umano">
+                    <button id="gioca">Gioca</button>
+                </div>
+            </div>
+
+        </div>
+        <div id='play' class="hidden">
+            <div class="winner">
+                <h2 id="vincitore"></h2>
+            </div>
+
+            <div class="gioco">
+                <div class="row-g">
+                    <div class="col-g">
+                        <span id="player">
+                            <h3>Umano</h3>
+                        </span>
+                        <img src="https://i.pinimg.com/originals/70/a9/59/70a959d84ddad5dc8e2fabdaa70e9bb7.jpg"
+                            alt="umano">
+                        <span id="dado1"></span>
+
+                    </div>
+                    <div class="col-g pc">
+                        <h3>PC</h3>
+                        <img src="https://i.redd.it/1r0b7q6jmc451.png" alt="PC">
+                        <span id="dado2"></span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
     <script src="js\script.js"></script>
 </body>
+
 </html>

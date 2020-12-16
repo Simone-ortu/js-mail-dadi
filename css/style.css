@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #7bcf0c;
+}
+h1{
+    text-align: center;
+}
+.form{
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 40px;
+}
+input::placeholder{
+    font-family: 'JetBrains Mono', monospace;
+}
+button{
+    margin-top: 20px;
+    font-family: 'JetBrains Mono', monospace;
+}
+.winner{
+    height: 200px;
+}
+.gioco{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+}
+.row-g{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+    
+.col-g{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+.col-g img{
+    width: 40%;
+    align-self: center;
+}
+.col-g .pc img{
+    margin-top: 50px;
+
+}
+#player{
+    font-size: 22px;
+    font-weight: 700;
+}
+#dado1{
+    font-size: 22px;
+    font-weight: 700;
+}
+#dado2{
+    font-size: 22px;
+    font-weight: 700;
+}
+h2{
+    display: block;
+    text-align: center;
+}
+.hidden{
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+}
